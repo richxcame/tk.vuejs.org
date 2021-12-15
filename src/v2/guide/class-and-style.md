@@ -108,19 +108,19 @@ Eger-de class-yň bahalaryny şertli üýtgeýän etmek isleseňiz, onda siz şe
 This will always apply `errorClass`, but will only apply `activeClass` when `isActive` is truthy.
 Bu `errorClass`-y hemişe, `activeClass`-y bolsa haçanda `isActive` dogry bolsa class-yň bahasyna goşar.
 
-Eger-de birnäçe şertli class-yň bahalary bar bolsa ýokarky görnüşde ýazmak bulaşyklyga getirip biler. Şonuň üçin hem, array-iň içinde object görnüşi hem ulanmak mümkin:
+Eger-de birnäçe şertli class-yň bahalary bar bolsa, ýokarky görnüşde ýazmak bulaşyklyga getirip biler. Şonuň üçin hem, array-iň içinde object görnüşi hem ulanmak mümkin:
 
 ``` html
 <div v-bind:class="[{ active: isActive }, errorClass]"></div>
 ```
 
-### With Components
+### Component-ler bilen ulanylyşy
 
-> This section assumes knowledge of [Vue Components](components.html). Feel free to skip it and come back later.
+> Bu bölüme düşinmek üçin [Vue Component](components.html) bilen tanyş bolmak hökmanydyr. Eger-de nätanyş bolsaňyz, ol bölümi geçip, soňra dowam edip bilersiňiz. 
 
-When you use the `class` attribute on a custom component, those classes will be added to the component's root element. Existing classes on this element will not be overwritten.
+Eger-de `class` attributyny hususy component-iňizde ulansaňyz, şol class bahalary component-iň kök elementini goşular. Öňden bar bolan class bahalary çalyşylmaýar.
 
-For example, if you declare this component:
+Meselem, şu component-a:
 
 ``` js
 Vue.component('my-component', {
@@ -128,25 +128,25 @@ Vue.component('my-component', {
 })
 ```
 
-Then add some classes when using it:
+Ulanylanda käbir class bahalary goşulanda:
 
 ``` html
 <my-component class="baz boo"></my-component>
 ```
 
-The rendered HTML will be:
+Şu HTML görkeziler:
 
 ``` html
 <p class="foo bar baz boo">Hi</p>
 ```
 
-The same is true for class bindings:
+Edil şuňa meňzeşlikde, class-lar üçin hem şeýledir:
 
 ``` html
 <my-component v-bind:class="{ active: isActive }"></my-component>
 ```
 
-When `isActive` is truthy, the rendered HTML will be:
+Eger-de `isActive` dogry bolsa, görkeziljek HTML şeýledir:
 
 ``` html
 <p class="foo bar active">Hi</p>
