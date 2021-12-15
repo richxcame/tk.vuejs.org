@@ -7,19 +7,19 @@ order: 6
 Köplenç ýagdaýda elemente berilen içki style we class-lary üýtgeýän etmek zerurlygy ýüze çykýar. Olaryň ikisi hem attribut bolany üçin, olary `v-bind` bilen üýtgetmek mümkin: bize diňe aňlatmanyň netijesiniň string bolmagy zerur. Şeýle-de bolsa, muňa garamazdan string bilen işlemek ýürege düşiji we käbir ýagdaýlarda ýalňyşlyga ýol açyp bilýär. Şol sebäpli hem, Vue `v-bind` bilen `class` we `style` attributlaryny ulanmak üçin ýörite mümkinçilikler berýär. String-den başga-da aňlatmalar object we array görnüşinde hem bolup biler.
 
 ## HTML Class-laryny üýtgetmek
-<div class="vueschool"><a href="https://vueschool.io/lessons/vuejs-dynamic-classes?friend=vuejs" target="_blank" rel="sponsored noopener" title="Free Vue.js Dynamic Classes Lesson">Watch a free video lesson on Vue School</a></div>
+<div class="vueschool"><a href="https://vueschool.io/lessons/vuejs-dynamic-classes?friend=vuejs" target="_blank" rel="sponsored noopener" title="Free Vue.js Dynamic Classes Lesson">Vue School-da muzdsuz wideo sapagyna görip bilersiňiz</a></div>
 
-### Object Syntax
+### Object görnüşinde
 
-We can pass an object to `v-bind:class` to dynamically toggle classes:
+Class-yň bahasyna, üýtgäp bilýän bahany bermek üçin `v-bind:class`-a object deňläp bilers.
 
 ``` html
 <div v-bind:class="{ active: isActive }"></div>
 ```
 
-The above syntax means the presence of the `active` class will be determined by the [truthiness](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) of the data property `isActive`.
+Ýokardaky aňlatmada, eger-de `isActive` [dogry](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) bolsa, class `active` bahany alar.
 
-You can have multiple classes toggled by having more fields in the object. In addition, the `v-bind:class` directive can also co-exist with the plain `class` attribute. So given the following template:
+Class-y birnäçe bahasy bolan object-e hem deňläp bilersiňiz. Mundan başga-da, `v-bind:class` direktiwasyny `class` attributy bilen bilelikde ulanyp bilersiňiz:
 
 ``` html
 <div
@@ -28,7 +28,7 @@ You can have multiple classes toggled by having more fields in the object. In ad
 ></div>
 ```
 
-And the following data:
+Şu maglumatlar bilen:
 
 ``` js
 data: {
@@ -37,15 +37,15 @@ data: {
 }
 ```
 
-It will render:
+Netijede alarys:
 
 ``` html
 <div class="static active"></div>
 ```
 
-When `isActive` or `hasError` changes, the class list will be updated accordingly. For example, if `hasError` becomes `true`, the class list will become `"static active text-danger"`.
+Haçanda `isActive` ýa-da `hasError` üýtgese, class-yň bahalary hem degişlilikde üýtgär. Meselem, eger-de `hasError` `true` baha üýtgese class-yň bahasy `"static active text-danger"` deň bolar.
 
-The bound object doesn't have to be inline:
+Classyň bahasy data-da bar bolan object-iň adyna hem deň bolup biler:
 
 ``` html
 <div v-bind:class="classObject"></div>
@@ -59,7 +59,7 @@ data: {
 }
 ```
 
-This will render the same result. We can also bind to a [computed property](computed.html) that returns an object. This is a common and powerful pattern:
+Bu hem şol bir netijäni berer. Class-y object gaýtaryp berýän [computed](computed.html) häsiýet bilen hem deňläp bilers. Bu örän güýçli tehnika:
 
 ``` html
 <div v-bind:class="classObject"></div>
@@ -79,9 +79,9 @@ computed: {
 }
 ```
 
-### Array Syntax
+### Array görnüşinde
 
-We can pass an array to `v-bind:class` to apply a list of classes:
+Class-a bahalary bermek üçin, `v-bind:class`-a array bermek mümkin:
 
 ``` html
 <div v-bind:class="[activeClass, errorClass]"></div>
