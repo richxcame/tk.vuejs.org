@@ -93,21 +93,22 @@ data: {
 }
 ```
 
-Which will render:
+Netijede alarys:
 
 ``` html
 <div class="active text-danger"></div>
 ```
 
-If you would like to also toggle a class in the list conditionally, you can do it with a ternary expression:
+Eger-de class-yň bahalaryny şertli üýtgeýän etmek isleseňiz, onda siz şertli aňlatmalary berip bilersiňiz:
 
 ``` html
 <div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
 ```
 
 This will always apply `errorClass`, but will only apply `activeClass` when `isActive` is truthy.
+Bu `errorClass`-y hemişe, `activeClass`-y bolsa haçanda `isActive` dogry bolsa class-yň bahasyna goşar.
 
-However, this can be a bit verbose if you have multiple conditional classes. That's why it's also possible to use the object syntax inside array syntax:
+Eger-de birnäçe şertli class-yň bahalary bar bolsa ýokarky görnüşde ýazmak bulaşyklyga getirip biler. Şonuň üçin hem, array-iň içinde object görnüşi hem ulanmak mümkin:
 
 ``` html
 <div v-bind:class="[{ active: isActive }, errorClass]"></div>
