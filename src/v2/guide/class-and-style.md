@@ -152,11 +152,11 @@ Eger-de `isActive` dogry bolsa, görkeziljek HTML şeýledir:
 <p class="foo bar active">Hi</p>
 ```
 
-## Binding Inline Styles
+## Içki Style-lary üýtgetmek
 
-### Object Syntax
+### Object görnüşinde
 
-The object syntax for `v-bind:style` is pretty straightforward - it looks almost like CSS, except it's a JavaScript object. You can use either camelCase or kebab-case (use quotes with kebab-case) for the CSS property names:
+`v-bind:style`-a object baha deňlemek örän ýeňil we ol JavaScript object-ligine garamazdan, edil CSS ýalydyr. CSS bahalaryny camelCase ýa-da kebab-case (kebab-case-da bir dyrnak goýmagy unutmaň) bilen berip bilersiňiz:
 
 ``` html
 <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
@@ -168,7 +168,7 @@ data: {
 }
 ```
 
-It is often a good idea to bind to a style object directly so that the template is cleaner:
+Köplenç style-yň bahasyny, data-da bar bolan object-e deňlemek gowy pikirdir we kody arassa görkezýär:
 
 ``` html
 <div v-bind:style="styleObject"></div>
@@ -182,28 +182,28 @@ data: {
 }
 ```
 
-Again, the object syntax is often used in conjunction with computed properties that return objects.
+Object görnüş köplenç, object gaýtaryp berýän computed häsiýet bilen hem ulanylyp biliner.
 
-### Array Syntax
+### Arraý görnüşinde
 
-The array syntax for `v-bind:style` allows you to apply multiple style objects to the same element:
+`v-bind:style` üçin array görnüşinde style bermek, şol bir elemente birnäçe style object-ni bermäge mümkinçilik berýär:
 
 ``` html
 <div v-bind:style="[baseStyles, overridingStyles]"></div>
 ```
 
-### Auto-prefixing
+### Auto-prefixing Awto prefikslemek
 
-When you use a CSS property that requires [vendor prefixes](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix) in `v-bind:style`, for example `transform`, Vue will automatically detect and add appropriate prefixes to the applied styles.
+Haçanda, siz `v-bind:style`-da [vendor prefiks](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix) hökmany bolan CSS bahasyny ulansaňyz, meselem: `transform`, Vue awtomatiki usulda prefiks-i kesgitleýär we gerek bolan style-yň bahasyna goşýar.
 
-### Multiple Values
+### Birnäçe bahalar
 
 > 2.3.0+
 
-Starting in 2.3.0+ you can provide an array of multiple (prefixed) values to a style property, for example:
+2.3.0+ wersiýadan başlap, birnäçe bahalary array bilen (prefikslenen) style-a berip bilersiňiz. Meselem:
 
 ``` html
 <div v-bind:style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
 ```
 
-This will only render the last value in the array which the browser supports. In this example, it will render `display: flex` for browsers that support the unprefixed version of flexbox.
+Bu diňe browseriň goldaýan, array-iň iň soňky elementi görkezer. Bu meselemde, flexbox-yň prefikssiz wersiýasyny goldaýan browserler üçin `display: flex` görkezer.
