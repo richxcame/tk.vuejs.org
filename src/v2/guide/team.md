@@ -165,7 +165,7 @@ order: 803
 
   <div class="team">
     <h2 id="core-team-emeriti">
-      Esasy toparyň pensionerleri
+      Esasy toparyň öňki agzalaryž
     </h2>
 
     <p>
@@ -206,11 +206,11 @@ order: 803
     </p>
 
     <p>
-      Some members of the Vue community have so enriched it, that they deserve special mention. We've developed a more intimate relationship with these key partners, often coordinating with them on upcoming features and news.
+      Vue toparynyň käbir ony has baýlaşdyran, aýratyn bellemäge mynasyp agzalary. Bu esasy hyzmatdaşlar bilen has ýakyn gatnaşyklary ösdürdik, köplenç ýakyn geljekdäki aýratynlyklar we täzelikleri olar bilen düzýäris.
     </p>
 
     <p v-if="userPosition" class="success">
-      The community partners have been sorted by their distance from you.
+      Jemgyýet hyzmatdaşlarymyz siz bilen aradaşlyga görä tertiplenilýär.
     </p>
 
     <vuer-profile
