@@ -61,11 +61,11 @@ order: 803
             Barada
             <span
               v-if="profile.distanceInKm <= 150"
-              :title="profile.name + ' is close enough to commute to your location.'"
+              :title="profile.name + ' siziň ýerleşýän ýeriňize has ýakyn.'"
               class="user-match"
             >{{ textDistance }} daşlykda</span>
             <template v-else>{{ textDistance }} daşlykda</template>
-            in {{ profile.city }}
+             {{ profile.city }}
           </dd>
         </span>
         <template v-else-if="profile.city">
@@ -165,7 +165,7 @@ order: 803
 
   <div class="team">
     <h2 id="core-team-emeriti">
-      Esasy toparyň öňki agzalaryž
+      Esasy toparyň öňki agzalary
     </h2>
 
     <p>
