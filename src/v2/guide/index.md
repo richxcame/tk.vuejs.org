@@ -1,12 +1,12 @@
 ---
-title: Introduction
+title: Tanyşdyryş
 type: guide
 order: 2
 ---
 
-## What is Vue.js?
+## Vue.js näme?
 
-Vue (pronounced /vjuː/, like **view**) is a **progressive framework** for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with [modern tooling](single-file-components.html) and [supporting libraries](https://github.com/vuejs/awesome-vue#components--libraries).
+Vue - (iňlis dilindäki **view** ýaly /vjuː/ diýip okalýar) ulanyjy interfeýsini ýasamak üçin **ösüşli framework**. Başga monolitik framework-lardan tapawutlylykda, Vue ýönekeý esasda düzilendigi sebäpli islendik derejedäki platforma üçin ulanylyp bilner. Esasy kitaphana diňe ulanyjy interfeýsine ýöriteleşendir, öwrenmesi aňsat we kitaphanalara ýa-da bar bolan proýektlere integrasiýa etmek örän ýeňildir. Başga bir tarapdan, Vue-ny [döwrebap gurallar](single-file-components.html) we [goşmaça kitaphanalar](https://github.com/vuejs/awesome-vue#components--libraries) ulanyp has kyn (uly), bir sahypadan ybarat bolan platformalary (SPA, Single-Page Application) ýasamak üçin hem ulanyp bolar.
 
 If you’d like to learn more about Vue before diving in, we <a id="modal-player"  href="#">created a video</a> walking through the core principles and a sample project.
 
