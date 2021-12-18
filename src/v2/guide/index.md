@@ -8,35 +8,36 @@ order: 2
 
 Vue - (iňlis dilindäki **view** ýaly /vjuː/ diýip okalýar) ulanyjy interfeýsini ýasamak üçin **ösüşli framework**. Başga monolitik framework-lardan tapawutlylykda, Vue ýönekeý esasda düzilendigi sebäpli islendik derejedäki platforma üçin ulanylyp bilner. Esasy kitaphana diňe ulanyjy interfeýsine ýöriteleşendir, öwrenmesi aňsat we kitaphanalara ýa-da bar bolan proýektlere integrasiýa etmek örän ýeňildir. Başga bir tarapdan, Vue-ny [döwrebap gurallar](single-file-components.html) we [goşmaça kitaphanalar](https://github.com/vuejs/awesome-vue#components--libraries) ulanyp has kyn (uly), bir sahypadan ybarat bolan platformalary (SPA, Single-Page Application) ýasamak üçin hem ulanyp bolar.
 
-If you’d like to learn more about Vue before diving in, we <a id="modal-player"  href="#">created a video</a> walking through the core principles and a sample project.
+Eger-de siz Vue öwrenmäge başlamazdan öň Vue-nyň esasy ýörelgelerini we proýektlerde ulanylyşyny öwrenmek isleseňiz, biz siz üçin <a id="modal-player" href="#">wideo taýýarladyk</a>.
 
-If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the [Comparison with Other Frameworks](comparison.html).
+If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the 
+Eger-de siz tejribeli Frontend Programma Üpjünçisi (Frontend Developer) bolsaňyz we Vue-ny başga kitaphanadyr frameworklar bilen deňeşdirmek isleseňiz [Başga frameworklar bilen deňeşdirme](comparison.html) sahypasyny okap bilersiňiz.
 
-<div class="vue-mastery"><a href="https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/" target="_blank" rel="sponsored noopener" title="Free Vue.js Course">Watch a free video course on Vue Mastery</a></div>
+<div class="vue-mastery"><a href="https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/" target="_blank" rel="sponsored noopener" title="Muzdsuz Vue.js dersi">Vue Mastery-de muzdsuz wideo sapagyny görüň</a></div>
 
-## Getting Started
+## Ilkinji ädimler
 
-<a class="button" href="installation.html">Installation</a>
+<a class="button" href="installation.html">Gurnamak</a>
 
-<p class="tip">The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript. If you are totally new to frontend development, it might not be the best idea to jump right into a framework as your first step - grasp the basics then come back! Prior experience with other frameworks helps, but is not required.</p>
+<p class="tip">Bu goldanmada HTML, CSS we JavaScript-i orta derejede bilýärsiňiz diýip kabul edilýär. Eger-de siz HTML, CSS we Javascript-i bilmeýän bolsaňyz, gönüden-göni framework öwrenmek dogry bolman biler. Ilki bilen olarda iň bolmanda ýönekeý düşünjeleri öwrenmek maslahat berilýär. Başga frameworklary bilýän bolsaňyz onda öwrenmegiňize kömek eder ýöne hökmany däldir.</p>
 
-The easiest way to try out Vue.js is using the [Hello World example](https://codesandbox.io/s/github/vuejs/vuejs.org/tree/master/src/v2/examples/vue-20-hello-world). Feel free to open it in another tab and follow along as we go through some basic examples. Or, you can <a href="https://github.com/vuejs/vuejs.org/blob/master/src/v2/examples/vue-20-hello-world/index.html" target="_blank" download="index.html" rel="noopener noreferrer">create an <code>index.html</code> file</a> and include Vue with:
+Vue.js-i barlap görmek üçin iň gowy ýol [Hello World meselemini](https://codesandbox.io/s/github/vuejs/vuejs.org/tree/master/src/v2/examples/vue-20-hello-world) görmekdir. Bu sahypany başga bir ekranda açyp, okap ýa-da üýtgedip görmek, Vue-nyň ýönekeý ulanylyşyna düşünmek üçin peýda berip biler. Ýa-da, siz <a href="https://github.com/vuejs/vuejs.org/blob/master/src/v2/examples/vue-20-hello-world/index.html" target="_blank" download="index.html" rel="noopener noreferrer"><code>index.html</code> faýl döredip</a> we Vue-ny goşup bilersiňiz:
 
 ``` html
-<!-- development version, includes helpful console warnings -->
+<!-- dörediliş wagtynda, kömekçi maglumatlary bermäge niýetlenen wersiýasy -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 ```
 
-or:
+ýa-da:
 
 ``` html
-<!-- production version, optimized for size and speed -->
+<!-- önümçilik wagtynda, tutýan ornyny azaltmaga we tizligini çaltlandyrmaga niýetlenen wersiýasy -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 ```
 
-The [Installation](installation.html) page provides more options of installing Vue. Note: We **do not** recommend that beginners start with `vue-cli`, especially if you are not yet familiar with Node.js-based build tools.
+[Gurnamak](installation.html) sahypasy Vue-ny gurnamak üçin birnäçe mümkinçilikler görkezýär. Bellik: Biz öwrenmäge täze başlan öwrenijilere gönüden-göni `vue-cli` bilen başlamagy maslahat **bermeýäris**, hususanda eger-de siz Node.js bilen esaslanan gurallary bilmeýän bolsaňyz.
 
-If you prefer something more interactive, you can also check out [this tutorial series on Scrimba](https://scrimba.com/g/gvuedocs), which gives you a mix of screencast and code playground that you can pause and play around with anytime.
+Eger siz interaktiw gurşawy halaýan bolsaňyz, ekranyň bir böleginde wideo görkezýän we ony islän wagtynyz saklap ikinji bölekde kody üýtgedip boljak gurşawy hödürleýän [Scrimbada şu sapaklaryň toplumyna](https://scrimba.com/g/gvuedocs) göz aýlap bilersiňiz.
 
 ## Declarative Rendering
 
