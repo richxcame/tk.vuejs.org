@@ -1,11 +1,11 @@
 <div id="partners">
   <p>
-    Vue Partners are premium shops that provide first-class Vue consulting and development.
-    If your company is interested in being listed as a partner, please register your interest
-    <a target="_blank" href="https://airtable.com/shrCQhat57SApJI2l">here</a>.
+    Vue Hyzmatdaşlar Vue-nyň ösüşi üçin birinji derejeli premium marketlerdir.
+    Eger-de siziň kompaniýaňyz hem hyzmatdaş bolmak isleýän bolsa
+    <a target="_blank" href="https://airtable.com/shrCQhat57SApJI2l">şu ýere</a>. registrasiýa boluň.
   </p>
 
-  <h2 id="active-partners">Active Partners</h2>
+  <h2 id="active-partners">Işjeň hyzmatdaşlar</h2>
 
   <% for (let partner of page.partners_list) { %>
     <div class="partner">
@@ -33,7 +33,7 @@
 
           <dt>
             <i class="fa fa-map-marker"></i>
-            <span class="sr-only">Location</span>
+            <span class="sr-only">Ýerleşýän ýeri</span>
           </dt>
           <dd>
             <%= partner.location %>
@@ -41,7 +41,7 @@
 
           <dt>
             <i class="fa fa-globe"></i>
-            <span class="sr-only">Languages</span>
+            <span class="sr-only">Dilleri</span>
           </dt>
           <dd class="language-list">
             <ul>
@@ -53,7 +53,7 @@
             </ul>
           </dd>
 
-          <dt>Proficiencies</dt>
+          <dt>Hünärler</dt>
           <dd>
             <ul>
               <% for (let proficiency of partner.proficiencies) { %>
@@ -74,7 +74,7 @@
             <% if (partner.email) { %>
               <a href="mailto:<%- partner.email %>?subject=Hire <%- partner.name %>">
                 <i class="fa fa-envelope"></i>
-                <span class="sr-only">Email</span>
+                <span class="sr-only">E-poçta</span>
               </a>
             <% } %>
             <% for( let link of partner.social_links) { %>
