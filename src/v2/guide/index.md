@@ -10,7 +10,6 @@ Vue - (iňlis dilindäki **view** ýaly /vjuː/ diýip okalýar) ulanyjy interfe
 
 Eger-de siz Vue öwrenmäge başlamazdan öň Vue-nyň esasy ýörelgelerini we proýektlerde ulanylyşyny öwrenmek isleseňiz, biz siz üçin <a id="modal-player" href="#">wideo taýýarladyk</a>.
 
-If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the 
 Eger-de siz tejribeli Frontend Programma Üpjünçisi (Frontend Developer) bolsaňyz we Vue-ny başga kitaphanadyr frameworklar bilen deňeşdirmek isleseňiz [Başga frameworklar bilen deňeşdirme](comparison.html) sahypasyny okap bilersiňiz.
 
 <div class="vue-mastery"><a href="https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/" target="_blank" rel="sponsored noopener" title="Muzdsuz Vue.js dersi">Vue Mastery-de muzdsuz wideo sapagyny görüň</a></div>
