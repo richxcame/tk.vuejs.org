@@ -1,24 +1,24 @@
 ---
-title: The Vue Instance
+title: Vue Meselemi
 type: guide
 order: 3
 ---
 
-## Creating a Vue Instance
+## Vue Meselemini döretmek
 
-Every Vue application starts by creating a new **Vue instance** with the `Vue` function:
+Her bir Vue programmasy `Vue` funksiýasy bilen **Vue meselemini** döretmek arkaly başlaýar:
 
 ```js
 var vm = new Vue({
-  // options
+  // saýlawlar
 })
 ```
 
-Although not strictly associated with the [MVVM pattern](https://en.wikipedia.org/wiki/Model_View_ViewModel), Vue's design was partly inspired by it. As a convention, we often use the variable `vm` (short for ViewModel) to refer to our Vue instance.
+Dogrydan [MVVM şablony](https://en.wikipedia.org/wiki/Model_View_ViewModel) bilen gabat gelmese-de, Vue'nyň dizaýny onuň käbir böleklerinden ylham alyndy. Umumy düşünjelerden, Vue meselemini almak üçin, biz köplenç ýagdaýda `vm` (ViewModel-iň gysgaldylmasy) üýtgeýän ululygyny ulanýarys.
 
-When you create a Vue instance, you pass in an **options object**. The majority of this guide describes how you can use these options to create your desired behavior. For reference, you can also browse the full list of options in the [API reference](../api/#Options-Data).
+Vue meselemi döredilende, oňa parametr edip **saýlawlar obýekti** berilýär. Bu goldanmanyň köp bölegi, siziň islegleriňize görä şol saýlawlary nähili ulanyp boljakdygyny düşündirýär. Salgylanma üçin, saýlawlaryň ählisini [API salgylanmasy](../api/#Options-Data) sahypasynda görüp bilersiňiz.
 
-A Vue application consists of a **root Vue instance** created with `new Vue`, optionally organized into a tree of nested, reusable components. For example, a todo app's component tree might look like this:
+A Vue application consists of a **kök Vue meselemi** created with `new Vue`, optionally organized into a tree of nested, reusable components. For example, a todo app's component tree might look like this:
 
 ```
 Root Instance
