@@ -1,13 +1,14 @@
-<h1 id="sponsor-Vue-js-Development">Sponsor Vue.js Development</h1>
+<h1 id="sponsor-Vue-js-Development">Vue.js-iň ösdürilşine hemaýatkär bol</h1>
 
 <p>
-Vue.js is an MIT licensed open source project and completely free to use.
-However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support Vue.js development via the following methods:
+Vue.js MIT 
+Vue.js, MIT rugsatnamaly açyk kodly we ulanmak üçin muzdsuz bolan taslamadyr.
+Şeýle-de bolsa, taslama üçin täze aýratynlyklary saklamak we ösdürmek üçin zerur tagallalar, dogry maliýe goldawy bolmazdan dowam edip bilmez. Aşakdaky usullar arkaly Vue.js-iň ösüşine goldap berip bilersiňiz:
 </p>
 
-<h2 id="One-time-Donations">One-time Donations</h2>
+<h2 id="One-time-Donations">Bir gezek bagyş etmek</h2>
 
-<p>We accept donations through these channels:</p>
+<p>Bagyşlary şu kanallar arkaly kabul edýäris:</p>
 
 <div id="one-time-donations">
   <a href="https://www.paypal.me/evanyou" target="_blank" rel="noopener">
@@ -21,7 +22,7 @@ However, the amount of effort needed to maintain and develop new features for th
 </div>
 
 <div id="coin-details" v-if="type && coins[type]">
-  <p>{{ coins[type].name }} Address:<br>{{ coins[type].address }}</p>
+  <p>{{ coins[type].name }} Ýerleşýän ýeri:<br>{{ coins[type].address }}</p>
   <img :src="'/images/coin-' + type + '.png'">
 </div>
 <script>
@@ -54,24 +55,24 @@ window.addEventListener('hashchange', function () {
 })
 </script>
 
-<h2 id="Recurring-Pledges">Recurring Pledges</h2>
+<h2 id="Recurring-Pledges">Dowamly bagyş</h2>
 
 <p>
-Recurring pledges come with exclusive perks, e.g. having your name listed in the Vue GitHub repository, or have your company logo placed on this website.
+Dowamly bagyş birnäçe gowylyklary berýär, meselem: siziň adyňyzyň Vue-nyň GitHub reposynda görkezilmegi ýa-da siziň kompaniýaňyzyň adynyň bu web saýtda görkezilmegi
 </p>
 
 <ul>
   <li>
-    <a href="https://www.patreon.com/evanyou" target="_blank" rel="noopener">Become a backer or sponsor via Patreon</a> (goes directly to support Evan You's full-time work on Vue)
+    <a href="https://www.patreon.com/evanyou" target="_blank" rel="noopener">Patreon-nyň üsti bilen hemaýatkär ýa-da bagyş ediji boluň</a> (gönüden-göni Evan You-nyň Vue-daky doly wagtly işine bagyş bolup gider)
   </li>
   <li>
-    <a href="https://opencollective.com/vuejs">Become a backer or sponsor via OpenCollective</a> (goes into a fund with transparent expense models supporting community efforts and events)
+    <a href="https://opencollective.com/vuejs">OpenCollective-iň üsti bilen hemaýatkär ýa-da bagyş ediji boluň</a> (göniden-göni Vue jemgyýetiniň çykdajy gaznasyna gidýär)
   </li>
 </ul>
 
-<h2 id="current-premium-sponsors">Current Premium Sponsors</h2>
+<h2 id="current-premium-sponsors">Häzirki Premium Hemaýatkärler</h2>
 
-<h3 id="special-sponsors">Special Sponsors</h3>
+<h3 id="special-sponsors">Aýratyn hemaýatkärler</h3>
 
 <p class="platinum">
 <%_ for (const sponsor of theme.special_sponsors) {_%>
@@ -81,7 +82,7 @@ Recurring pledges come with exclusive perks, e.g. having your name listed in the
 <%_ } _%>
 </p>
 
-<h3 id="platinum">Platinum</h3>
+<h3 id="platinum">Platiniýum</h3>
 
 <p class="platinum">
 <%_ for (const sponsor of theme.platinum_sponsors) {_%>
@@ -91,7 +92,7 @@ Recurring pledges come with exclusive perks, e.g. having your name listed in the
 <%_ } _%>
 </p>
 
-<h3 id="open-collective-platinum">OpenCollective Platinum</h3>
+<h3 id="open-collective-platinum">OpenCollective Platiýum</h3>
 
 <p class="open-collective-sponsors sponsor-section">
 <%_ for (let i = 0; i < 10; i++) {_%>
@@ -101,7 +102,7 @@ Recurring pledges come with exclusive perks, e.g. having your name listed in the
 <%_ } _%>
 </p>
 
-<h3 id="special-sponsors-china">Special Sponsors (China)</h3>
+<h3 id="special-sponsors-china">Aýratyn Hemaýatkärler (Hytaý)</h3>
 
 <p class="platinum">
 <%_ for (const sponsor of theme.platinum_sponsors_china) {_%>
@@ -111,7 +112,7 @@ Recurring pledges come with exclusive perks, e.g. having your name listed in the
 <%_ } _%>
 </p>
 
-<h3 id="patreon-gold">Patreon Gold</h3>
+<h3 id="patreon-gold">Patreon Altyn</h3>
 
 <p class="patreon-sponsors sponsor-section">
 <%_ for (const sponsor of theme.gold_sponsors) {_%>
@@ -121,7 +122,7 @@ Recurring pledges come with exclusive perks, e.g. having your name listed in the
 <%_ } _%>
 </p>
 
-<h3 id="open-collective-gold">OpenCollective Gold</h3>
+<h3 id="open-collective-gold">OpenCollective Altyn</h3>
 
 <p class="open-collective-sponsors sponsor-section">
 <%_ for (let i = 0; i < 10; i++) {_%>
@@ -131,7 +132,7 @@ Recurring pledges come with exclusive perks, e.g. having your name listed in the
 <%_ } _%>
 </p>
 
-<h3 id="patreon-silver">Patreon Silver</h3>
+<h3 id="patreon-silver">Patreon Kümüş</h3>
 
 <p class="patreon-sponsors sponsor-section">
 <%_ for (const sponsor of theme.silver_sponsors) {_%>
@@ -141,7 +142,7 @@ Recurring pledges come with exclusive perks, e.g. having your name listed in the
 <%_ } _%>
 </p>
 
-<h3 id="open-collective-silver">OpenCollective Silver</h3>
+<h3 id="open-collective-silver">OpenCollective Kümüş</h3>
 
 <p class="open-collective-sponsors sponsor-section">
 <%_ for (let i = 0; i < 5; i++) {_%>
@@ -152,9 +153,9 @@ Recurring pledges come with exclusive perks, e.g. having your name listed in the
 </p>
 
 <p>
-If you run a business and are using Vue in a revenue-generating product, it makes business sense to sponsor Vue development: <b>it ensures the project that your product relies on stays healthy and actively maintained.</b> It can also help your exposure in the Vue community and makes it easier to attract Vue developers.
+Eger-de siz bir iş alyp barýan bolsaňyz we girdeji getirýän önümde ulanýan bolsaňyz, Vue-nyň ösüşine hemaýat bermegiň işewürlik manysy bar: <b>önümiňiziň sagdyn we işjeň ýagdaýda saklanmagyna bil baglaýan taslamany üpjün edýär.</b> Şeýle hem, “Vue” jemgyýetine täsir etmegiňize kömek edip biler we “Vue” döredijilerini özüne çekmegi ýeňilleşdirer.
 </p>
 
 <p>
-If you are an individual user and have enjoyed the productivity of using Vue, consider donating as a sign of appreciation - like buying me coffee once in a while :)
+Aýry ulanyjy bolsaňyz we “Vue”-ni ulanmagyň öndürijiliginden lezzet alýan bolsaňyz, bagyş bermegi minnetdarlygyň alamaty hökmünde görüň - maňa bir gezek kofe satyn almak ýaly :)
 </p>
